@@ -1,0 +1,24 @@
+# Logs
+Assigment 2/logs
+Assigment 2/*.log
+Assigment 2/npm-debug.log*
+Assigment 2/yarn-debug.log*
+Assigment 2/yarn-error.log*
+Assigment 2/pnpm-debug.log*
+Assigment 2/lerna-debug.log*
+
+Assigment 2/node_modules
+Assigment 2/dist
+Assigment 2/dist-ssr
+Assigment 2/*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
