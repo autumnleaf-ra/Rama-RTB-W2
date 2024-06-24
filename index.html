@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <h2 style="margin-left: 100px">LOGO</h2>
+
+      <ul>
+        <li>HOME</li>
+        <li>WORK</li>
+        <li>CONTACT</li>
+        <li>ABOUT ME</li>
+      </ul>
+
+      <ul>
+        <li>SIGN UP</li>
+        <li>LOGIN</li>
+      </ul>
+    </div>
+    <!-- section 1 -->
+    <div class="main-bg">
+      <div class="mid-information">
+        <div class="info-game">
+          <h1>PLAY TRADITIONAL GAME</h1>
+        </div>
+        <div class="small-info">
+          <h3>Experience new traditional game play</h3>
+        </div>
+
+        <div class="button-play">
+          <button class="play">PLAY NOW</button>
+        </div>
+
+        <div class="the-story">
+          <p>The Story</p>
+          <span class="fa fa-caret-down" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 2 -->
+    <div class="middle-bg">
+      <div class="mid-information">
+        <div class="col-2">
+          <div class="text-game">
+            <h3>What's so special?</h3>
+            <h1>THE GAMES</h1>
+          </div>
+          <div class="slider-container">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="mySlides fade">
+              <img
+                src="Assets/rockpaperstrategy-1600.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="Assets/rockpaperstrategy-1600.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="Assets/rockpaperstrategy-1600.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- features -->
+    <div class="features-bg">
+      <div class="features-col">
+        <div class="features-text">
+          <h3>What's so special?</h3>
+          <h1>FEATURES</h1>
+        </div>
+        <div class="features-scroll">
+          <div class="features-1">
+            <div class="feature-select">
+              <span class="dot-features"></span>
+              <hr width="1" size="168" style="position: relative" />
+              <span class="dot-features2"></span>
+            </div>
+            <div class="feature-select2">
+              <span class="dot-features2"></span>
+            </div>
+          </div>
+          <div class="features-2">
+            <div class="type-1">
+              <h2 class="features-tag1">
+                TRADITIONAL GAMES
+                <div class="small-text">
+                  <p>
+                    if you miss your childhood, we provide many traditional
+                    games here
+                  </p>
+                </div>
+              </h2>
+            </div>
+            <div class="type-2">
+              <h2 class="features-tag1">GAME SUIT</h2>
+              <h2 class="features-tag2">TBD</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- system requirements -->
+    <div class="requirements">
+      <div class="container-requirements">
+        <div class="text-requirements">
+          <p class="req-p">Can My Computer Run this game?</p>
+        </div>
+      </div>
+      <div class="text-reqh1">
+        <h1>SYSTEM REQUIREMENTS</h1>
+      </div>
+      <div class="requirements-detail">
+        <div class="grid-container">
+          <div class="grid-item">
+            <span class="title-req">OS:</span> <br />
+            Windows 7 64-bit only <br />
+            (No OSX Support at this time)
+          </div>
+          <div class="grid-item">
+            <span class="title-req">Processor:</span> <br />
+            Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ MD Athlon X2 @
+            2.8 GHZ
+          </div>
+          <div class="grid-item">
+            <span class="title-req">Memory:</span> <br />
+            4 GB RAM
+          </div>
+          <div class="grid-item">
+            <span class="title-req">Storage:</span> <br />
+            8 GB Avaiable Space
+          </div>
+          <div class="grid-item item3">
+            <span class="title-req">Graphics:</span> <br />
+            NVIDIA Gefore GTX 660 2GB or AMD Radeon HD 2GB DirectX11 (Shader
+            Model 5)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quotes">
+      <div class="container-quotes">
+        <div class="text-quotes">
+          <h1>TOP SCORES</h1>
+          <span class="quotes-small"
+            >This top score from various games provided on this platform</span
+          >
+          <button class="button-more">see more</button>
+        </div>
+        <div class="card-type">
+          <div class="card">
+            <div class="card-info">
+              <img class="profile-picture" src="Assets/evan.png" alt="" />
+              <div class="profile-information">
+                <span class="nickname">Evan Lahti</span>
+                <span style="margin-left: 180px">
+                  <br />
+                  <small>PC Gamer</small></span
+                >
+              </div>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+            <div class="quotes-type">
+              <p>"One of my gaming highlights of the year."</p>
+              <small>June 18, 2021</small>
+            </div>
+          </div>
+          <div class="card-2">
+            <div class="card-info">
+              <img class="profile-picture" src="Assets/jada.png" alt="" />
+              <div class="profile-information">
+                <span class="nickname">Jada Griffin</span>
+                <span style="margin-left: 180px">
+                  <br />
+                  <small>Nerdreactor</small></span
+                >
+              </div>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+            <div class="quotes-type">
+              <p>
+                "The next big thing in the world of streaming and survival
+                games."
+              </p>
+              <small>July 10, 2021</small>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-info">
+              <img class="profile-picture" src="Assets/aaron.png" alt="" />
+              <div class="profile-information">
+                <span class="nickname">Aaron Williams</span>
+                <span style="margin-left: 160px">
+                  <br />
+                  <small>Uproxx</small></span
+                >
+              </div>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+            <div class="quotes-type">
+              <p>
+                "Snoop Dog Playing The Wildy Entertaining 'SOS' Is Ridicolous."
+              </p>
+              <small>July 10, 2021</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="news-letter">
+          <h3>Want to stay in touch ?</h3>
+          <h1>NEWSLETTER SUBSCRIBE</h1>
+          <p>
+            In order to start receiving our news, all you have to do is enter
+            your email address. Eveything else will be taken care of by us. We
+            will send you emails containing information about game. We don't
+            spam
+          </p>
+          <div class="subscribtion">
+            <div class="full-input">
+              <label for="email">Your email address</label>
+              <input type="text" placeholder="youremail@binar.co.id" />
+            </div>
+            <button>Subscribe Now</button>
+          </div>
+        </div>
+        <div class="footer-2">
+          <div class="footer-top">
+            <ul>
+              <li>MAIN</li>
+              <li>ABOUT</li>
+              <li>GAME FEATURES</li>
+              <li>SYSTEM REQUIREMENTS</li>
+              <li>
+                <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitch" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <span>
+            <small class="games-copyright">
+              &copy; 2018 Your Games, Inc. All Rights Reserved
+            </small>
+          </span>
+          <span>
+            <small class="privacy"
+              >PRIVACY POLICY | TERMS OF SERVICE | CODE OF CONDUCT</small
+            >
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
