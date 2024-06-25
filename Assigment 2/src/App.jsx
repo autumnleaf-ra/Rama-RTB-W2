@@ -2,6 +2,8 @@
 import bgStars from "./assets/bg-stars.svg";
 import FlipCountdown from "@rumess/react-flip-countdown";
 import hills from "./assets/pattern-hills.svg";
+import "./index.css";
+
 import fb from "./assets/icon-facebook.svg";
 import pinterest from "./assets/icon-pinterest.svg";
 import instagram from "./assets/icon-instagram.svg";
