@@ -1,30 +1,78 @@
 // Import Image
 import bgStars from "./assets/bg-stars.svg";
-import FlipCountdown from "@rumess/react-flip-countdown";
 import hills from "./assets/pattern-hills.svg";
-import "./index.css";
 
-import fb from "./assets/icon-facebook.svg";
-import pinterest from "./assets/icon-pinterest.svg";
-import instagram from "./assets/icon-instagram.svg";
+// Library
+import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
+import moment from "moment";
+
+// CSS
+import "@leenguyen/react-flip-clock-countdown/dist/index.css";
+import "./styles.css";
+import { useEffect, useState } from "react";
+
+// UseState
 
 function App() {
+  const dateDefault = moment("09-03-2024");
+  let date = dateDefault.format("MM-DD-YYYY");
+  const urlParams = new URLSearchParams(window.location.search);
+  const param1Value = urlParams.get("date");
+  const param2Value = urlParams.get("time");
+  const [defaultDate, setdefaultDate] = useState(date);
+  const regex = /^[a-zA-Z]+$/;
+  const isNumber = regex.test(param1Value);
+  const checkParam = param1Value?.length;
+
+  // console.log("param1", param1Value);
+  // console.log("param2", param2Value);
+  console.log(date);
+
+  useEffect(() => {
+    if (isNumber) {
+      return setdefaultDate(date);
+    }
+
+    if (param1Value === null || date?.length !== checkParam) {
+      return setdefaultDate(date);
+    }
+
+    if (param2Value) {
+      date = dateDefault.format("MM-DD-YYYY hh:mm:ss");
+      const dateTimeParam = param1Value + " " + param2Value;
+      if (dateTimeParam?.length !== date?.length) {
+        date = dateDefault.format("MM-DD-YYYY");
+        return setdefaultDate(param1Value);
+      }
+      return setdefaultDate(dateTimeParam);
+    }
+
+    setdefaultDate(param1Value);
+  }, []);
+
+  const dateDay = moment(defaultDate).format("LL");
+
   return (
     <>
-      <div className="h-screen w-screen bg-gradient-to-b from-dark-blue to-light-blue">
+      <div className="h-screen w-screen bg-gradient-to-b from-dark-blue to-light-blue overflow-hidden">
         <img src={bgStars} alt="stars" className="h-screen fixed" />
         <div className="text-slate-50 text-center tracking-widest pt-40 space-y-10 uppercase">
           <p className="text-3xl">WE'RE LAUNCHING SOON</p>
-          <FlipCountdown
+          <small>{dateDay}</small>
+          {/* <FlipCountdown
             hideYear
-            monthTitle="Months"
+            hideMonth
             dayTitle="Days"
             hourTitle="Hours"
             minuteTitle="Minutes"
             secondTitle="Seconds"
             titlePosition={"bottom"}
             endAt={"2024-09-03 01:26:58"}
-          />
+          /> */}
+          <div className="flex justify-center">
+            <FlipClockCountdown to={defaultDate} className="flip-clock" />
+          </div>
+          {/* Footer */}
           <img src={hills} alt="" className="w-full absolute bottom-1" />
           <div className="w-full flex flex-row space-x-10 pb-10 absolute bottom-3 justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
