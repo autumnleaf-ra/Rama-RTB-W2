@@ -24,10 +24,6 @@ function App() {
   const isNumber = regex.test(param1Value);
   const checkParam = param1Value?.length;
 
-  // console.log("param1", param1Value);
-  // console.log("param2", param2Value);
-  console.log(date);
-
   useEffect(() => {
     if (isNumber) {
       return setdefaultDate(date);
@@ -59,16 +55,6 @@ function App() {
         <div className="text-slate-50 text-center tracking-widest pt-40 space-y-10 uppercase">
           <p className="text-3xl">WE'RE LAUNCHING SOON</p>
           <small>{dateDay}</small>
-          {/* <FlipCountdown
-            hideYear
-            hideMonth
-            dayTitle="Days"
-            hourTitle="Hours"
-            minuteTitle="Minutes"
-            secondTitle="Seconds"
-            titlePosition={"bottom"}
-            endAt={"2024-09-03 01:26:58"}
-          /> */}
           <div className="flex justify-center">
             <FlipClockCountdown to={defaultDate} className="flip-clock" />
           </div>
