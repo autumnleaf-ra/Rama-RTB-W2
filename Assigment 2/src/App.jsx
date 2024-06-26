@@ -48,7 +48,7 @@ function App() {
     }
 
     setdefaultDate(param1Value);
-  }, []);
+  }, [param1Value, param2Value, setdefaultDate, date, defaultDate]);
 
   const dateDay = moment(defaultDate).format("LL");
 
