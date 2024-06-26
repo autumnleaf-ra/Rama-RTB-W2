@@ -15,3 +15,24 @@
   --fcc-separator-size: 2px; /* size of colon */
   --fcc-separator-color: none; /* color of colon */
 }
+
+@media (max-width: 1000px) {
+  .flip-clock {
+    scale: 1;
+  }
+}
+@media (max-width: 822px) {
+  .flip-clock {
+    scale: 0.8;
+  }
+}
+@media (max-width: 661px) {
+  .flip-clock {
+    scale: 0.6;
+  }
+}
+@media (max-width: 500px) {
+  .flip-clock {
+    scale: 0.4;
+  }
+}
